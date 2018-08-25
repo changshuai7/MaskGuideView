@@ -6,7 +6,6 @@ import android.view.View;
 
 /**
  * 遮罩系统创建时配置参数的封装
- * Created by binIoter
  */
 class Configuration implements Parcelable {
 

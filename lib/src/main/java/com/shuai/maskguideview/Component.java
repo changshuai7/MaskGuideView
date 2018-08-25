@@ -15,7 +15,6 @@ import android.view.View;
  * 具体创建遮罩的说明请参加{@link com.shuai.maskguideview.GuideBuilder}
  *
  * @see com.shuai.maskguideview.GuideBuilder
- * Created by binIoter
  */
 public interface Component {
 

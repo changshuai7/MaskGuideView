@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by binIoter
+ *
  */
 class Common {
   /**

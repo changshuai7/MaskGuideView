@@ -2,7 +2,6 @@ package com.shuai.maskguideview;
 
 /**
  * 遮罩系统运行异常的封装
- * Created by binIoter
  */
 class BuildException extends RuntimeException {
 

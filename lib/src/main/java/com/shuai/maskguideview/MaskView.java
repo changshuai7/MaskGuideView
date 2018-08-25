@@ -17,7 +17,7 @@ import android.view.ViewGroup;
 import static android.view.ViewGroup.LayoutParams.WRAP_CONTENT;
 
 /**
- * Created by binIoter
+ *
  */
 class MaskView extends ViewGroup {
 

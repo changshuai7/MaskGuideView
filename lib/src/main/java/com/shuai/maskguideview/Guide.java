@@ -13,7 +13,6 @@ import android.view.animation.AnimationUtils;
  * 外部需要调用{@link com.shuai.maskguideview.GuideBuilder}来创建该实例，实例创建后调用
  * {@link #show(Activity)} 控制显示； 调用 {@link #dismiss()}让遮罩系统消失。 <br>
  *
- * Created by binIoter
  */
 public class Guide implements View.OnKeyListener, View.OnClickListener {
   /**

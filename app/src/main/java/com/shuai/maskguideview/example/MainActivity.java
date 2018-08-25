@@ -3,6 +3,7 @@ package com.shuai.maskguideview.example;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.shuai.maskguideview.Guide;
 import com.shuai.maskguideview.example.R;
@@ -11,7 +12,7 @@ import com.shuai.maskguideview.example.component.SimpleComponent;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button button1,button2;
+    private Button button1, button2;
     Guide guide;
 
     @Override
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         button2 = findViewById(R.id.button2);
 
 
-        button1.post(new Runnable() {
+        button2.post(new Runnable() {
             @Override
             public void run() {
                 showGuideView();
@@ -40,10 +41,14 @@ public class MainActivity extends AppCompatActivity {
                 .setOverlayTarget(false)
                 .setOutsideTouchable(false);
         builder.setOnVisibilityChangedListener(new GuideBuilder.OnVisibilityChangedListener() {
-            @Override public void onShown() {
+            @Override
+            public void onShown() {
+                Toast.makeText(MainActivity.this, "button1 show", Toast.LENGTH_SHORT).show();
             }
 
-            @Override public void onDismiss() {
+            @Override
+            public void onDismiss() {
+                Toast.makeText(MainActivity.this, "button1 dismiss", Toast.LENGTH_SHORT).show();
                 showGuideView2();
             }
         });
@@ -53,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
         guide.setShouldCheckLocInWindow(true);
         guide.show(this);
     }
+
+
 
 
     public void showGuideView2() {
@@ -65,10 +72,14 @@ public class MainActivity extends AppCompatActivity {
                 .setOverlayTarget(false)
                 .setOutsideTouchable(false);
         builder.setOnVisibilityChangedListener(new GuideBuilder.OnVisibilityChangedListener() {
-            @Override public void onShown() {
+            @Override
+            public void onShown() {
+                Toast.makeText(MainActivity.this, "button2 show", Toast.LENGTH_SHORT).show();
             }
 
-            @Override public void onDismiss() {
+            @Override
+            public void onDismiss() {
+                Toast.makeText(MainActivity.this, "button2 dismiss", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -77,4 +88,5 @@ public class MainActivity extends AppCompatActivity {
         guide.setShouldCheckLocInWindow(true);
         guide.show(this);
     }
+
 }
