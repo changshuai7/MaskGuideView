@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         button2 = findViewById(R.id.button2);
 
 
-        button2.post(new Runnable() {
+        button1.post(new Runnable() {
             @Override
             public void run() {
                 showGuideView();
