@@ -14,3 +14,6 @@ Step 2. Add the dependency
 	dependencies {
 	        implementation 'com.github.changshuai7:MaskGuideView:1.0.0'
 	}
+
+
+原项目地址：https://github.com/binIoter/GuideView
